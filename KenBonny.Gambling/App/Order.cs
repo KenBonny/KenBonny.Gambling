@@ -1,6 +1,6 @@
 ﻿namespace KenBonny.Gambling.App
 {
-    public class Stake
+    public class Order
     {
         public double Money { get; set; }
     }

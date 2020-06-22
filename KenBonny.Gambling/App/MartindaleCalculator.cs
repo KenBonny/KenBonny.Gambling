@@ -8,10 +8,10 @@ namespace KenBonny.Gambling.App
     /// </summary>
     public class MartindaleCalculator : IStakeCalculator
     {
-        public decimal Calculate(Stake stake)
+        public decimal Calculate(Order order)
         {
             var martindale = new Martindale();
-            var input = new Input {MoneyStaked = (decimal) stake.Money};
+            var input = new Input {MoneyStaked = (decimal) order.Money};
             return martindale.Calculate(input);
         }
     }

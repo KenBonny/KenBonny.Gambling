@@ -5,6 +5,6 @@
     /// </summary>
     public interface IStakeCalculator
     {
-        decimal Calculate(Stake stake);
+        decimal Calculate(Order order);
     }
 }

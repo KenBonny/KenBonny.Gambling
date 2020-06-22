@@ -8,10 +8,10 @@ namespace KenBonny.Gambling.App
     /// </summary>
     public class PercentageOfBankCalculator : IStakeCalculator
     {
-        public decimal Calculate(Stake stake)
+        public decimal Calculate(Order order)
         {
             var percentageOfBank = new PercentageOfBank();
-            var input = new Input{MoneyStaked = (decimal) stake.Money};
+            var input = new Input{MoneyStaked = (decimal) order.Money};
             return percentageOfBank.GetPercentage(input);
         }
     }

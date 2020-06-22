@@ -4,7 +4,7 @@
     {
         public void Run()
         {
-            var stake = new Stake{Money = 5};
+            var stake = new Order{Money = 5};
             var calculator = CreateCalculator(true);
             calculator.Calculate(stake);
         }
